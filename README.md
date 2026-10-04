@@ -1,16 +1,44 @@
-# React + Vite
+# QR Code Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive QR Code Generator built with React and Vite for the GDG on Campus, SRM Recruitment 2026-27.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Generate QR codes for:
+  - URL
+  - Text
+  - Email
+  - Phone
+  - Wi-Fi
+- Live QR code preview
+- Custom QR size
+- Foreground and background color customization
+- Error correction levels
+- Margin customization
+- Presets: Classic, Dark, Blue
+- Download QR code as PNG
+- Input validation
+- Scan reliability warnings
+- Recent QR codes stored in localStorage
+- Recent QR history persists after refreshing the page
+- Responsive design for mobile and desktop
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript
+- HTML
+- CSS
+- qrcode.react
+- localStorage
 
-## Expanding the ESLint configuration
+## Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[Open the QR Code Generator](YOUR_VERCEL_LINK_HERE)
+
+## Run Locally
+
+```bash
+npm install
+npm run dev
