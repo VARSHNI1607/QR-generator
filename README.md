@@ -35,7 +35,7 @@ A responsive QR Code Generator built with React and Vite for the GDG on Campus, 
 
 ## Live Demo
 
-[Open the QR Code Generator](YOUR_VERCEL_LINK_HERE)
+[Open the QR Code Generator](https://qr-generator-hazel-seven.vercel.app/)
 
 ## Run Locally
 
