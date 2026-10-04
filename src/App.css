@@ -1,0 +1,384 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 35px;
+}
+
+h2 {
+  margin-top: 25px;
+}
+
+/* QR TYPE BUTTONS */
+
+.type-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.type-buttons button {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+}
+
+.type-buttons button:hover {
+  background: #f0f0f0;
+}
+
+.type-buttons button.active {
+  background: black;
+  color: white;
+}
+
+/* FORM ELEMENTS */
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  max-width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background: white;
+}
+
+select {
+  cursor: pointer;
+}
+
+/* COLOR PICKERS */
+
+input[type="color"] {
+  width: 70px;
+  height: 45px;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+}
+
+input[type="color"]:hover {
+  border-color: #888;
+}
+
+/* PRESETS */
+
+.presets {
+  margin-top: 30px;
+}
+
+.preset-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.preset-buttons button {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+}
+
+.preset-buttons button:hover {
+  background: #f0f0f0;
+}
+
+/* PREVIEW */
+
+.preview {
+  width: 100%;
+  margin-top: 35px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.preview canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 15px auto 0;
+}
+
+/* DOWNLOAD */
+
+.download-button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.download-button:hover {
+  opacity: 0.8;
+}
+
+/* SAVE */
+
+.save-button {
+  margin-top: 10px;
+  margin-left: 5px;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background: #f0f0f0;
+}
+
+/* VALIDATION */
+
+.error-message {
+  color: #c62828;
+  font-weight: 600;
+}
+
+/* RECENT QR CODES */
+
+.recent {
+  margin-top: 35px;
+}
+
+.recent-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.recent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.recent-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.recent-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.recent-item p {
+  margin: 6px 0 0;
+  color: #666;
+  word-break: break-word;
+}
+
+/* CLEAR HISTORY */
+
+.clear-history-button {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  color: #c62828;
+  cursor: pointer;
+}
+
+.clear-history-button:hover {
+  background: #f5f5f5;
+}
+
+/* SCAN WARNING */
+
+.scan-warning {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #f0c36d;
+  border-radius: 8px;
+  background: #fff8e1;
+  color: #6b4f00;
+  text-align: left;
+}
+
+.scan-warning strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.scan-warning ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .app {
+    width: 100%;
+    padding: 15px 10px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 25px 15px;
+    border-radius: 12px;
+  }
+
+  h1 {
+    font-size: 28px;
+    line-height: 1.15;
+    overflow-wrap: break-word;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  /* QR type buttons */
+  .type-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .type-buttons button {
+    width: 100%;
+  }
+
+  /* Presets */
+  .preset-buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .preset-buttons button {
+    width: 100%;
+  }
+
+  /* Inputs */
+  input,
+  select {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  input[type="color"] {
+    width: 60px;
+    height: 45px;
+  }
+
+  /* Preview */
+  .preview {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .preview canvas {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Buttons */
+  .download-button,
+  .save-button {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Recent */
+  .recent-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .recent-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .recent-item img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .clear-history-button {
+    width: 100%;
+  }
+}
